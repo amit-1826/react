@@ -1,5 +1,7 @@
 import './App.css';
+import ClassComponent from './ClassComponent';
 import Profile from './Profile';
+import Counter from './Counter';
 
 function App() {
   return (
@@ -7,6 +9,9 @@ function App() {
       <Profile name="Amit" lastname="Dubey" >
         Information of User
       </Profile>
+      <ClassComponent message="Message from props" />
+
+      <Counter/>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class ClassComponent extends Component {
     render() {
-        return <h1>This is a class Component.</h1>
+        return <h1>Message: {this.props.message}</h1>
     }
 }
 
