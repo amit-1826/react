@@ -11,16 +11,15 @@ class Counter extends Component {
     render() {
         return <div>
             <h3>Counter is: {this.state.counter}</h3>
-            <button onClick={() => this.incrementCounter()}>Click</button>
+            <button onClick={this.incrementCounter}>Click</button>
         </div>
     }
 
-    incrementCounter() {
-        setInterval(() => {
-            this.setState({
-                counter: this.state.counter + 1
-            })
-        }, 100);
+    incrementCounter = () => {
+        console.log(this);
+        this.setState({
+            counter: this.state.counter + 1
+        })
     }
 }
 

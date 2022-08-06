@@ -2,7 +2,8 @@ import { Component } from "react";
 
 class ClassComponent extends Component {
     render() {
-        return <h1>Message: {this.props.message}</h1>
+        const {message1, message2} = this.props;
+        return <h1>Message: {message1} {message2}</h1>
     }
 }
 
